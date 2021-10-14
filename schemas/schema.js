@@ -5,6 +5,11 @@ import seo from './common/seo'
 
 import singletonGlobal from './singletonGlobal'
 import singletonHome from './singletonHome'
+import singletonUnity from './singletonUnity'
+import singletonGallery from './singletonGallery'
+import singletonContact from './singletonContact'
+import teachers from './teacher'
+import classes from './classes'
 
 export default createSchema({
   name: 'default',
@@ -12,6 +17,11 @@ export default createSchema({
   types: schemaTypes.concat([
     singletonGlobal,
     singletonHome,
+    teachers,
+    classes,
+    singletonUnity,
+    singletonGallery,
+    singletonContact,
     seo
   ]),
 })
