@@ -39,12 +39,6 @@ export default {
             validation: Rule => Rule.required()
         },
         {
-            title: 'Hero Blurb',
-            name: 'heroBlurb',
-            type: 'text',
-            validation: Rule => Rule.required()
-        },
-        {
             title: 'About Content Heading',
             description: 'The heading for the "About Excelsior" section',
             name: 'aboutContentHeading',

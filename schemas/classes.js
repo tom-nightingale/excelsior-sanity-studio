@@ -5,8 +5,8 @@ export default {
     __experimental_actions: ['update', 'create', 'delete', 'publish'],
     fields: [
         {
-            title: 'Title',
-            name: 'title',
+            title: 'Class Name',
+            name: 'className',
             type: 'string',
             validation: Rule => Rule.required()
         },
@@ -22,7 +22,13 @@ export default {
             type: 'array', 
             of: [{type: 'block'}],
             validation: Rule => Rule.required()
-        },        
+        },    
+        {
+            title: 'Class Image',
+            name: 'classImage',
+            description: 'An image of the class-type in action',
+            type: "image",
+        },     
         {
             title: 'SEO / Share Settings',
             name: 'seo',
@@ -31,7 +37,7 @@ export default {
     ],
     preview: {
         select: {
-            title: 'title'
+            title: 'className'
         },
         prepare({ title }) {
             return {

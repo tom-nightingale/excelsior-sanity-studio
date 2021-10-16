@@ -5,24 +5,25 @@ export default {
     __experimental_actions: ['update', 'create', 'delete', 'publish'],
     fields: [
         {
-            title: 'Title',
-            name: 'title',
+            title: 'Name',
+            name: 'name',
             type: 'string',
             validation: Rule => Rule.required()
         },
         {
-            title: 'Content Heading',
-            name: 'contentHeading',
+            title: 'Position',
+            description: 'The teacher\'s position within the company',
+            name: 'position',
             type: 'string',
             validation: Rule => Rule.required()
         },
         {
-            title: 'Content',
-            name: 'content',
-            type: 'array', 
-            of: [{type: 'block'}],
+            title: 'Profile Photo',
+            name: 'profilePhoto',
+            description: 'The teacher\'s profile photo',
+            type: "image",
             validation: Rule => Rule.required()
-        },        
+        },   
         {
             title: 'SEO / Share Settings',
             name: 'seo',
@@ -31,7 +32,7 @@ export default {
     ],
     preview: {
         select: {
-            title: 'title'
+            title: 'name'
         },
         prepare({ title }) {
             return {
