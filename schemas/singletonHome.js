@@ -68,6 +68,13 @@ export default {
             validation: Rule => Rule.required()
         },
         {
+            title: 'Page Image',
+            name: 'pageImage',
+            description: 'The image shown below the teachers and above the class list.',
+            type: "image",
+            validation: Rule => Rule.required()
+        }, 
+        {
             title: 'SEO / Share Settings',
             name: 'seo',
             type: 'seo'
