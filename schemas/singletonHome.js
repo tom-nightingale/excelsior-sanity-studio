@@ -55,8 +55,15 @@ export default {
         },        
         {
             title: 'Inspirational Quote',
-            description: 'The quote shown before the teacher introductions',
+            description: 'The start of the inspirational quote',
             name: 'inspirationalQuote',
+            type: 'string',
+            validation: Rule => Rule.required()
+        },
+        {
+            title: 'Inspirational Quote Highlight',
+            description: 'The part of the quote shown in the highlight colour',
+            name: 'inspirationalQuoteHighlight',
             type: 'string',
             validation: Rule => Rule.required()
         },
