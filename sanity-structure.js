@@ -8,7 +8,8 @@ import {
   FiStar,
   FiImage,
   FiMessageCircle,
-  FiHeadphones
+  FiHeadphones,
+  FiFilm
 } from 'react-icons/fi'
 
 import { getGlobalSlug, previewURL } from './utils/resolveProductionUrl'
@@ -40,6 +41,8 @@ export default () =>
       S.listItem().title('Global').child(S.editor().id('global').schemaType('global').documentId('global').views(getPreview('global'))).icon(FiAlertCircle),
       S.divider(),
       S.listItem().title('Home').child(S.editor().id('home').schemaType('home').documentId('home').views(getPreview('home'))).icon(FiHome),
+      S.divider(),
+       S.listItem().title('Classes Page').child(S.editor().id('classes').schemaType('classes').documentId('classes').views(getPreview('classes'))).icon(FiFilm),
       S.divider(),
       S.listItem().title('Teachers').child(S.documentTypeList('teacher').title('Teachers')).icon(FiUser),
       S.divider(),
