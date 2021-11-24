@@ -5,6 +5,7 @@ import seo from './common/seo'
 
 import singletonGlobal from './singletonGlobal'
 import singletonHome from './singletonHome'
+import singletonClasses from './singletonClasses'
 import singletonUnity from './singletonUnity'
 import singletonGallery from './singletonGallery'
 import singletonContact from './singletonContact'
@@ -17,6 +18,7 @@ export default createSchema({
   types: schemaTypes.concat([
     singletonGlobal,
     singletonHome,
+    singletonClasses,
     teachers,
     classes,
     singletonUnity,
