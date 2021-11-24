@@ -18,7 +18,7 @@ export default {
             description: 'The image to appear in the hero',
             name: 'heroImage',
             type: "image",
-            validation: Rule => Rule.min(1)
+            validation: Rule => Rule.required()
         },
         {
             title: 'Hero Sub Heading',
