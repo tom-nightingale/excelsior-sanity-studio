@@ -9,7 +9,8 @@ import {
   FiImage,
   FiMessageCircle,
   FiHeadphones,
-  FiFilm
+  FiFilm,
+  FiClock
 } from 'react-icons/fi'
 
 import { getGlobalSlug, previewURL } from './utils/resolveProductionUrl'
@@ -42,11 +43,13 @@ export default () =>
       S.divider(),
       S.listItem().title('Home').child(S.editor().id('home').schemaType('home').documentId('home').views(getPreview('home'))).icon(FiHome),
       S.divider(),
-       S.listItem().title('Classes Page').child(S.editor().id('classes').schemaType('classes').documentId('classes').views(getPreview('classes'))).icon(FiFilm),
-      S.divider(),
       S.listItem().title('Teachers').child(S.documentTypeList('teacher').title('Teachers')).icon(FiUser),
       S.divider(),
+      S.listItem().title('Classes Page').child(S.editor().id('classes').schemaType('classes').documentId('classes').views(getPreview('classes'))).icon(FiFilm),
+      S.divider(),
       S.listItem().title('Classes').child(S.documentTypeList('class').title('Classes')).icon(FiHeadphones),
+      S.divider(),
+      S.listItem().title('Class Timetable').child(S.documentTypeList('timetable').title('Class Timetable')).icon(FiClock),
       S.divider(),
       S.listItem().title('Unity').child(S.editor().id('unity').schemaType('unity').documentId('unity').views(getPreview('unity'))).icon(FiStar),
       S.divider(),

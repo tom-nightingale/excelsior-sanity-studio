@@ -3,3 +3,25 @@
   --brand-primary: #F07837;
   --brand-primary--inverted: #00206e;
 }
+
+/* .timepicker {
+    background: red;
+}
+
+.timepicker svg {
+    display: none;
+}
+
+#sanityBody {
+    background: black;
+} */
+
+
+/* :global(.timepicker svg) {
+  display: none;
+} */
+
+:global(.timepicker-info) {
+  width: auto !important;
+  display: inline-block;
+}
