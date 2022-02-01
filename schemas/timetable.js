@@ -4,7 +4,7 @@ export default {
     title: 'Timetable',
     name: 'timetable',
     type: 'document',
-    __experimental_actions: ['update', 'create', 'delete', 'publish'],
+    __experimental_actions: ['update', 'publish'],
     fields: [
         {
             title: 'Title',
